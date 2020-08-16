@@ -40,13 +40,14 @@ function filterclick(){
 	var filterDate = tableData.filter(tableData => tableData.datetime === inputValue);
 	
 	
-	//append filtered row and values
+	
 	//create new table with values from only filter date
+	//append filtered row and values
 	//same as previous code
 	
-		if (filterDate.length == ){
+		//create msg if filter 	
+		if (filterDate.length == 0){
 			var thead = d3.select("thead");
-			thead.html("");
 			var row = tbody.append("tr");
 			row.append("td").text("No sightings on this date");
 			
@@ -62,12 +63,6 @@ function filterclick(){
 						row.append("td").text(value);
 						});
 		});}
-	
-
-		
-	
-	
-	
 }
 
 //click button and run function

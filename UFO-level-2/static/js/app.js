@@ -97,9 +97,15 @@ function filterclick(){
 	
 		if (filterData.length == 0){
 			var thead = d3.select("thead");
-			thead.html("");
+			
 			var row = tbody.append("tr");
-			row.append("td").text("No sightings on this date");
+			row.append("td").text("");
+			row.append("td").text("");
+			row.append("td").text("");
+			row.append("td").text("");
+			row.append("td").text("No sightings for the given search");
+			row.append("td").text("");
+			row.append("td").text("");
 			
 			
    
